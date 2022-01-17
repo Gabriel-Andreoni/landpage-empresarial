@@ -286,7 +286,9 @@ html {
 
 }
 
-.conteudo__servicos__contabilidade {
+
+
+.conteudo__servicos__contabilidade, .conteudo__servicos__departamentoPessoal, .conteudo__servicos__departamentoFiscal, .conteudo__servicos__departamentoAdministrativo, .conteudo__servicos__departamentoJuridico, .conteudo__servicos__departamentoEmpresarial, .conteudo__servicos__departamentoBNDES, .conteudo__servicos__observaçao {
     width: 80%;
     height: auto;
 
@@ -298,6 +300,14 @@ html {
 
     font-size: 2em;
     font-weight: normal;
+}
+
+.conteudo__servicos___observaçao {
+    -webkit-text-stroke: 1px var(--corPrincipal); 
+    
+    font-size: 3em;
+
+    color: transparent;
 }
 
 .conteudo__servicos__descricao {
@@ -331,7 +341,7 @@ html {
 .conteudo__lista___item {
     font-size: 1.2em;
 
-    line-height: 1.4em;
+    line-height: 1.8em;
 
     color: var(--corPrincipal);
 }
