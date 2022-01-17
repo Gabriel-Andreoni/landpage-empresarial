@@ -316,7 +316,7 @@ html {
 .conteudo__servicos__lista {
     width: 80%;
 
-    margin: 3em auto 0 auto;
+    margin: 3em auto 3em auto;
     padding: 2em;
 
     columns: 2;
