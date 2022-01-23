@@ -98,6 +98,7 @@ html {
 
 }
 
+
 .lista__item a {
     color: var(--corPrincipal);
 
@@ -323,8 +324,6 @@ html {
 
 }
 
-
-
 .conteudo__servicos__contabilidade, .conteudo__servicos__departamentoPessoal, .conteudo__servicos__departamentoFiscal, .conteudo__servicos__departamentoAdministrativo, .conteudo__servicos__departamentoJuridico, .conteudo__servicos__departamentoEmpresarial, .conteudo__servicos__departamentoBNDES, .conteudo__servicos__observaçao {
     width: 80%;
     height: auto;
@@ -361,12 +360,13 @@ html {
 }
 
 .conteudo__servicos__lista {
-    width: 80%;
+    width: 100%;
 
     margin: 3em auto 3em auto;
     padding: 2em;
 
     columns: 2;
+    column-gap: 2em;
 
     list-style: none;
 
@@ -383,6 +383,13 @@ html {
     line-height: 1.8em;
 
     color: var(--corPrincipal);
+}
+
+
+.conteudo__lista___item:hover {
+    background: var(--corServicos-Container);
+
+    border-radius: .25em;
 }
 
 footer {
@@ -429,7 +436,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (min-width: 0px) {
     .cabeçalho {
         justify-content:flex-end;
 
@@ -444,5 +451,104 @@ footer {
         display: block;
 
         margin: 0 -5em 0 0;
+    }
+
+    .conteudo::before, .conteudo::after {
+        display: none;
+    }
+
+    .hero__apresentacao {
+        width: 100%;
+        height: 100%;
+
+        flex-direction: column;
+    }
+
+    .apresentacao__h1 {
+        position: absolute;
+
+        top: 1em;
+
+        font-size: 3.5em;
+    }
+
+    .apresentacao__p {
+        width: 90%;
+        
+        text-align: center;
+    }
+
+    .apresentacao__p {
+        margin-top: 12em;
+    }
+
+    .hero__apresentacao a {
+        margin-top: 5em;
+    }
+
+
+    .hero__imagem {
+        display: none;
+    } 
+    
+    .conteudo__servicos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo__servicos__contabilidade, .conteudo__servicos__departamentoPessoal, .conteudo__servicos__departamentoFiscal, .conteudo__servicos__departamentoAdministrativo, .conteudo__servicos__departamentoJuridico, .conteudo__servicos__departamentoEmpresarial, .conteudo__servicos__departamentoBNDES {
+        width: 90%;
+    }
+
+    .conteudo__servicos__titulo-servicos {
+        padding-left: 1em;
+    }
+
+    .conteudo__servicos__descricao {
+        width: 90%;
+
+        text-align: justify;
+    }
+
+    .conteudo__servicos__lista {
+        display: flex;
+        flex-direction: column;
+        
+        list-style: circle;
+    }
+
+    .conteudo__lista___item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .cabeçalho {
+        justify-content: space-between;
+
+    }
+
+    .menu__lista {
+        display: flex;
+    }
+
+    .cabeçalho__buttonMobile {
+        display: none;
+    }
+
+    .hero__apresentacao {
+        width: 50%;
+    }
+
+    .hero__imagem {
+        display: flex;
     }
 }
