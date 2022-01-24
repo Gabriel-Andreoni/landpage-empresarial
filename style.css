@@ -169,10 +169,6 @@ html {
     align-items: center;
 }
 
-.hero__imagem {
-    align-items: baseline;
-}
-
 .apresentacao__h1 {
     margin: 1em auto;
     font-size: 4em;
@@ -413,6 +409,7 @@ footer {
     height: auto;
 
     display: flex;
+    flex-wrap: wrap;
 
     padding-top: 5em;
 
@@ -555,6 +552,14 @@ footer {
         
         gap: 0;
     }
+    
+    .sobre-empresa-imagem{
+        display: none;
+    }
+
+    .sobre-empresa__apresentacao {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -571,6 +576,8 @@ footer {
     .hero__apresentacao a {
 
     }
+
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -595,6 +602,10 @@ footer {
     .hero__apresentacao a {
         margin: 3em 0 0 0;
     }
+
+   
+
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -621,7 +632,6 @@ footer {
     .hero__imagem {
         display: flex;
         align-items: flex-start;
-        justify-content: center;
     }
 
     .hero__imagem img {
@@ -644,5 +654,12 @@ footer {
         gap: 23em;
     }
 
+    .sobre-empresa__apresentacao {
+        width: 50%;
+    }
+
+    .sobre-empresa-imagem {
+        display: flex;
+    }
     
 }
