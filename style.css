@@ -150,52 +150,6 @@ html {
     z-index: 10;
 }
 
-.conteudo::before {
-    content: '';
-
-    display: inline-block;
-
-    position: absolute;
-    top: 10em;
-    left: -1em;
-
-    width: 50px;
-    height: 200px;
-
-    background: var(--corPrincipal);
-
-    border-radius: 1.5em;
-
-    transform: rotate(220deg);
-
-    z-index: 1;
-
-    animation: animaçao__conteudo___before___after .6s;
-}
-
-
-.conteudo::after {
-    content: '';
-
-    display: inline-block;
-
-    position: absolute;
-    top: 21em;
-    left: -1em;
-
-    width: 50px;
-    height: 200px;
-
-    background: var(--corPrincipal);
-
-    border-radius: 1.5em;
-
-    transform: rotate(220deg);
-
-    z-index: 1;
-    
-    animation: animaçao__conteudo___before___after .6s;
-}
 .conteudo__hero {
     width: 100%;
     height: 100%;
@@ -216,8 +170,6 @@ html {
 }
 
 .hero__imagem {
-    animation: animaçao__img___hero .6s;
-
     align-items: baseline;
 }
 
@@ -328,10 +280,16 @@ html {
     font-size: 3em;
     font-weight: normal;
 
-    color: transparent;
+    color: var(--corPrincipal);
 
+    border-bottom: 1px solid var(--corServicos-Container);
+
+}
+
+.conteudo__servicos__titulo-princial > span {
     -webkit-text-stroke: 1px var(--corPrincipal);
 
+    color: transparent;
 }
 
 .conteudo__servicos__contabilidade, .conteudo__servicos__departamentoPessoal, .conteudo__servicos__departamentoFiscal, .conteudo__servicos__departamentoAdministrativo, .conteudo__servicos__departamentoJuridico, .conteudo__servicos__departamentoEmpresarial, .conteudo__servicos__departamentoBNDES, .conteudo__servicos__observaçao {
@@ -449,6 +407,64 @@ footer {
         opacity: 1;
     }
 }
+
+.conteudo__sobreEmpresa {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+
+    padding-top: 5em;
+
+    background: transparent;
+}
+
+.sobre-empresa__apresentacao {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-empresa__titulo {
+    font-size: 3em;
+    font-weight: normal;
+
+    text-align: center;
+
+    color: var(--corPrincipal);
+    
+}
+
+.sobre-empresa__titulo span {
+    -webkit-text-stroke: 1px  var(--corPrincipal);
+
+    color: transparent;
+}
+
+.sobre-empresa-descricao {
+    margin: 2em auto 0 auto;
+
+    width: 80%;
+
+    text-align: justify;
+
+    font-size: 1.2em;
+    line-height: 1.4em;
+
+    color: var(--corPrincipal);
+}
+
+.sobre-empresa-imagem {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 @keyframes animaçao__conteudo___before___after {
     0% {
